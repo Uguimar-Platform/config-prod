@@ -58,3 +58,8 @@ management:
   tracing:
     sampling:
       probability: 0.1
+
+grpc:
+  notification:
+    host: ${NOTIFICATION_SERVICE_HOST:notification-service}
+    port: ${NOTIFICATION_SERVICE_PORT:9092}
